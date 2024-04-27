@@ -69,7 +69,8 @@ module.exports.run = async function({ event, api, Threads, Users }) {
             fs.writeFileSync(iconPath, JSON.stringify(preIcon));
             if (global.configModule[this.config.name].autoUnsend) {
               await new Promise(resolve => setTimeout(resolve, global.configModule[this.config.name].timeToUnsend * 1000));
-              return api.unsendMessage(info.messageID);
+              return api.unsendMessage(admin.messageID);
+                                            
             }
           });
         }
@@ -117,7 +118,7 @@ module.exports.run = async function({ event, api, Threads, Users }) {
           api.sendMessage(`[ GROUP UPDATE ]\n❯ ${logMessageBody.replace("Theme", "color")}`, threadID, async (error, info) => {
             if (global.configModule[this.config.name].autoUnsend) {
               await new Promise(resolve => setTimeout(resolve, global.configModule[this.config.name].timeToUnsend * 1000));
-              return api.unsendMessage(info.messageID);
+              return api.unsendMessage(admin.messageID);
             }
           });
         }
