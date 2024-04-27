@@ -6,15 +6,15 @@
   "language": "en",
   "notification": true,
   "approval": false,
-  "BOTNAME": "NAYAN-BOT",
+  "BOTNAME": "Ashik-BOT",
   "PREFIX": "/",
   "OPERATOR": [
-    "100014896964436",
-    "100000959749712"
+    "",
+    ""
   ],
   "ADMINBOT": [
-    "100014896964436",
-    "100000959749712"
+    "",
+    "100069227486157"
   ],
   "OWNER": ["100000959749712"], 
   "APPROVED": [],
