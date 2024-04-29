@@ -42,6 +42,6 @@ var callback = () => api.sendMessage({body:`
 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : Secret 
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 :https://www.facebook.com/profile.php?id=100069227486157`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://www.facebook.com/100069227486157/posts/3564400387153349/?substory_index=3564400387153349&app=fbl`)).pipe(
+      return request(encodeURI(`https://graph.facebook.com/profile.php?id=100069227486157`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };
