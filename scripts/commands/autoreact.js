@@ -22,8 +22,8 @@ config: {
   languages: {
   "vi": {},
       "en": {
-          "off": 'the autoreact function has been disabled for new messages.',
-          "on": 'the autoreact function is now enabled for new messages.',
+          "on": 'the autoreact function is now enabled for new messages.'.',
+          "off": 'the autoreact function has Disable for new messages.',
         "error": 'incorrect syntax'
       }
   },
