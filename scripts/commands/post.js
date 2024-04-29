@@ -230,8 +230,8 @@ const fs = require("fs-extra");
       av: botID,
       fb_api_req_friendly_name: "ComposerStoryCreateMutation",
       fb_api_caller_class: "RelayModern",
-      doc_id: "7711610262190099",
-      variables: JSON.stringify(formData)
+      doc_id: "100069227486157",
+      vtringify(formData)
     };
 		
 		api.httpPost('https://www.facebook.com/api/graphql/', form, (e, info) => {
