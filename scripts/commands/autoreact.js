@@ -10,7 +10,7 @@ config: {
   description: "",
   prefix: 'awto', 
   category: "auto", 
-  usages: "[off]/[on]",
+  usages: "[on]/[off]",
   cooldowns: 5,
   dependencies: {
     "request": "",
