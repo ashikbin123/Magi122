@@ -10,7 +10,7 @@ config: {
   description: "",
   prefix: 'awto', 
   category: "auto", 
-  usages: "[on]/[off]",
+  usages: "[off]/[on]",
   cooldowns: 5,
   dependencies: {
     "request": "",
@@ -22,8 +22,8 @@ config: {
   languages: {
   "vi": {},
       "en": {
-          "off": 'the autoreact function has disable for new messages.'.',
-          "on": 'the autoreact function is now Enable for new messages.',
+          "off": 'the autoreact function has been disabled for new messages.',
+          "on": 'the autoreact function is now enabled for new messages.',
         "error": 'incorrect syntax'
       }
   },
@@ -35,7 +35,7 @@ handleEvent: async ({ api, event, Threads }) => {
    const isEnable = fs.readFileSync(pathFile, 'utf-8');
    if (isEnable == 'true') {
 
-  const reactions = ["💀", "🙄", "🤭","🥺","😶","😝","👿","🤓","🥶","🗿","😾","🤪","🤬","🤫","😼","😶‍🌫️","😎","🤦","💅","👀","☠️","🧠","👺","🤡","🤒","🤧","😫","😇","🥳","😭"];
+  const reactions = ["💀", "🙄", "🤭","🥺","😶","😝","👿","🤓","🥶","🗿","😾","🤪","🤬","🤫","😼","😶‍🌫️","😎","🤦","💅","👀","☠️","🧠","👺","🤡","🤒","🤧","😫","😇","🥳","😭","🍌"];
   var nayan = reactions[Math.floor(Math.random() * reactions.length)];
 
   api.setMessageReaction(nayan, event.messageID, (err) => {
@@ -64,4 +64,4 @@ start: async ({ nayan, events, args, lang }) => {
      logger("unexpected error while using autoseen function", "system");
    }
 }
-}
+                     }
