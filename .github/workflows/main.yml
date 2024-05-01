@@ -1,4 +1,4 @@
- lname: Node.js CI
+name: Node.js CI
 
 on:
   push:
@@ -26,4 +26,3 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm start
-
