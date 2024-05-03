@@ -120,7 +120,7 @@ registerFont(__dirname + `/nayan/CaviarDreams.ttf`, {
     });
     ctx.textAlign = "start";
     ctx.font = "45px time";
-    ctx.fillText("@" + "তোর নানা আমি আশিক", 250, 515)
+    ctx.fillText("@" + "Www.pornhub.com", 250, 515)
     ctx.fillText("@" + "MOHAMMAD-Ashik", 250, 575)
    //ctx.fillText("@" + "DVFB.VietLe.pro", 405, 750)
     ctx.restore();
