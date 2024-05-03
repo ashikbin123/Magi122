@@ -6,7 +6,7 @@ module.exports.config = {
   prefix: true,
   description: "Mix emoji",
   category: "image",
-  usages: "[emoji1 | emoji2]",
+  usages: "[emoji1 . emoji2]",
   cooldowns: 0,
   dependencies: {
       "fs-extra": "",
